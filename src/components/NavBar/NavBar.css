@@ -1,0 +1,23 @@
+.containerNavBar {
+  width: 90vw;
+  background-color: white;
+}
+
+.NavBar {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 83vw;
+  margin-inline: 5vw;
+}
+
+h1 {
+  color: rgb(70, 70, 185);
+}
+
+.books,
+.categories {
+  color: darkgray;
+  text-decoration: none;
+  margin-left: 4rem;
+}
