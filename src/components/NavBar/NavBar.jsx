@@ -9,7 +9,7 @@ const NavBar = () => (
         <h1>Bookstore CMS</h1>
       </div>
       <div className="links">
-        <Link to="/Books" className="books">Books</Link>
+        <Link to="/" className="books">Books</Link>
         <Link to="/Categories" className="categories">Catagories</Link>
       </div>
     </div>
