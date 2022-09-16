@@ -1,0 +1,107 @@
+.bookContainer {
+  border-radius: 3px;
+  display: flex;
+  width: 83vw;
+  justify-content: space-between;
+  height: 11vh;
+}
+
+.BookBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+
+li {
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+.category,
+.title,
+.author {
+  margin: 0;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.author {
+  color: rgb(70, 70, 160);
+  font-size: 0.9rem;
+}
+
+.infoBook {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  align-content: center;
+  width: 30%;
+}
+
+.category {
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.progress {
+  display: flex;
+  margin-right: 5rem;
+}
+
+.progText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.progText p {
+  margin: 0;
+}
+
+.progText h2 {
+  margin: 0;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  height: 35%;
+  margin-top: 10px;
+}
+
+.buttonContainer button {
+  color: rgb(70, 70, 160);
+  background-color: white;
+  height: 1.5rem;
+}
+
+.bookBtn1 {
+  border: none;
+  padding-left: 0;
+}
+
+.bookBtn2 {
+  border: none;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.bookBtn3 {
+  border: none;
+  padding-left: 0.5rem;
+}
+
+.BookFooter {
+  width: 15vw;
+  padding-left: 2rem;
+}
