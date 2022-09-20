@@ -1,22 +1,30 @@
 import React from 'react';
 import './BookItem.css';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
 import ProgressPie from '../ProgressPie/ProgressPie';
+import { removeBook } from '../../Redux/Books/books';
 
 const BooksItem = (props) => {
-  const { id, title, author } = props;
+  const {
+    id,
+    title,
+    author,
+    category,
+  } = props;
+  const dispatch = useDispatch();
   return (
     <li id={id} className="bookContainer">
       <article className="BookBody">
         <section className="infoBook">
           <div className="genBook">
-            <p className="category">category</p>
+            <p className="category">{category}</p>
             <h3 className="title">{title}</h3>
             <p className="author">{author}</p>
           </div>
           <div className="buttonContainer">
             <button className="bookBtn1" type="button">comments</button>
-            <button className="bookBtn2" type="button">remove</button>
+            <button className="bookBtn2" onClick={() => dispatch(removeBook(id))} type="button">remove</button>
             <button className="bookBtn3" type="button">Edit</button>
           </div>
         </section>
