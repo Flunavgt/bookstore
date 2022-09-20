@@ -1,7 +1,18 @@
 const ADD_BOOK = 'src/components/Books/ADD_BOOK';
 const REMOVE_BOOK = 'src/components/Books/REMOVE_BOOK';
 
-const initialState = [];
+const initialState = [{
+  id: '0',
+  title: 'mi pequeno',
+  author: 'ey Scott',
+  category: 'fiction',
+},
+{
+  id: '1',
+  title: 'amigo',
+  author: 'nita',
+  category: 'action',
+}];
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -24,9 +35,9 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-const addBook = (title, author, category, id) => ({
-  id,
+const addBook = (id, title, author, category) => ({
   type: ADD_BOOK,
+  id,
   title,
   author,
   category,
