@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import React, { useState } from 'react';
 import { nanoid } from '@reduxjs/toolkit';
-import { addBook } from '../../Redux/Books/books';
+import { addBooksApi } from '../../Redux/Books/api';
 
 const FormAdd = () => {
   const [title, setTitle] = useState();
@@ -11,10 +11,16 @@ const FormAdd = () => {
 
   const handleAdd = () => {
     if (title === '' || author === '' || category === 'DEFAULT') return;
-    dispatch(addBook(nanoid(), title, author, category));
+    const newBook = {
+      id: nanoid(),
+      title,
+      author,
+      category,
+    };
+    dispatch(addBooksApi(newBook));
     setTitle('');
     setAuthor('');
-    category('DEFAULT');
+    setCategory('DEFAULT');
   };
 
   return (

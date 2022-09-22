@@ -1,34 +1,25 @@
+/* eslint-disable prefer-template */
 const ADD_BOOK = 'src/components/Books/ADD_BOOK';
 const REMOVE_BOOK = 'src/components/Books/REMOVE_BOOK';
+const ADD_ARR_BOOK = 'ADD_ARR_BOOK';
 
-const initialState = [{
-  id: '0',
-  title: 'mi pequeno',
-  author: 'ey Scott',
-  category: 'fiction',
-},
-{
-  id: '1',
-  title: 'amigo',
-  author: 'nita',
-  category: 'action',
-}];
+const initialState = [];
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_BOOK:
+    case ADD_BOOK + '/fulfilled':
       return [
         ...state,
-        {
-          title: action.title,
-          author: action.author,
-          category: action.category,
-          id: action.id,
-        },
+        action.payload,
       ];
 
-    case REMOVE_BOOK:
-      return state.filter((item) => item.id !== action.id);
+    case REMOVE_BOOK + '/fulfilled':
+      return state.filter((item) => item.id !== action.payload);
+
+    case ADD_ARR_BOOK + '/fulfilled':
+      return [
+        ...action.payload,
+      ];
 
     default:
       return state;
@@ -48,5 +39,11 @@ const removeBook = (id) => ({
   id,
 });
 
-export { addBook, removeBook };
+export {
+  addBook,
+  removeBook,
+  ADD_ARR_BOOK,
+  ADD_BOOK,
+  REMOVE_BOOK,
+};
 export default reducer;
