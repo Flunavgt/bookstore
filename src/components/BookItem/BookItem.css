@@ -3,7 +3,7 @@
   display: flex;
   width: 83vw;
   justify-content: space-between;
-  height: 11vh;
+  height: 14vh;
 }
 
 .BookBody {
@@ -94,6 +94,7 @@ ul {
   border: none;
   border-left: 1px solid black;
   border-right: 1px solid black;
+  padding: 6px 5px;
 }
 
 .bookBtn3 {

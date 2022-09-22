@@ -3,7 +3,7 @@ import './BookItem.css';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import ProgressPie from '../ProgressPie/ProgressPie';
-import { removeBook } from '../../Redux/Books/books';
+import { deleteBook } from '../../Redux/Books/api';
 
 const BooksItem = (props) => {
   const {
@@ -24,7 +24,7 @@ const BooksItem = (props) => {
           </div>
           <div className="buttonContainer">
             <button className="bookBtn1" type="button">comments</button>
-            <button className="bookBtn2" onClick={() => dispatch(removeBook(id))} type="button">remove</button>
+            <button className="bookBtn2" onClick={() => dispatch(deleteBook(id))} type="button">remove</button>
             <button className="bookBtn3" type="button">Edit</button>
           </div>
         </section>
