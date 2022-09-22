@@ -33,7 +33,7 @@ const BooksItem = (props) => {
             <ProgressPie />
           </div>
           <div className="progText">
-            <h2>64%</h2>
+            <h2>65%</h2>
             <p>Completed</p>
           </div>
         </div>

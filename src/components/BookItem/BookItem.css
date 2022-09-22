@@ -29,7 +29,7 @@ li {
 }
 
 .author {
-  color: rgb(70, 70, 160);
+  color: rgba(92, 92, 246, 0.657);
   font-size: 0.9rem;
 }
 
@@ -54,7 +54,7 @@ ul {
 
 .progress {
   display: flex;
-  margin-right: 5rem;
+  margin-right: 2rem;
 }
 
 .progText {
@@ -70,6 +70,7 @@ ul {
 
 .progText h2 {
   margin: 0;
+  font-size: 2rem;
 }
 
 .buttonContainer {
@@ -80,7 +81,7 @@ ul {
 }
 
 .buttonContainer button {
-  color: rgb(70, 70, 160);
+  color: rgba(92, 92, 246, 0.657);
   background-color: white;
   height: 1.5rem;
 }
@@ -105,4 +106,21 @@ ul {
 .BookFooter {
   width: 15vw;
   padding-left: 2rem;
+  border-left: 1px solid rgba(187, 178, 178, 0.707);
+}
+
+.bookFooter_title {
+  color: lightgray;
+  margin-bottom: 0;
+}
+
+.bookFooter_chapter {
+  margin-top: 0.5rem;
+}
+
+.bookFooter_button {
+  background-color: #0290FF;
+  color: white;
+  padding: 7px 30px;
+  border-radius: 5px;
 }
