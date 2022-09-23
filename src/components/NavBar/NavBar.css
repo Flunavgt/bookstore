@@ -1,6 +1,8 @@
 .containerNavBar {
   width: 90vw;
   background-color: white;
+  display: flex;
+  align-items: center;
 }
 
 .NavBar {
@@ -11,7 +13,7 @@
 }
 
 h1 {
-  color: rgb(70, 70, 185);
+  color: #0290ff;
 }
 
 .books,
@@ -19,4 +21,16 @@ h1 {
   color: darkgray;
   text-decoration: none;
   margin-left: 4rem;
+}
+
+.usr_icon {
+  margin-right: 3.5rem;
+  border: 1px solid rgb(185, 181, 181);
+  border-radius: 50%;
+}
+
+.headIco {
+  color: #0290ff;
+  padding: 0.85rem;
+  font-size: 20px;
 }

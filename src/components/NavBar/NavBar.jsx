@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
+import { FaUser } from 'react-icons/fa';
 
 const NavBar = () => (
   <div className="containerNavBar">
@@ -12,6 +13,9 @@ const NavBar = () => (
         <Link to="/" className="books">Books</Link>
         <Link to="/Categories" className="categories">Catagories</Link>
       </div>
+    </div>
+    <div className="usr_icon">
+      <FaUser className="headIco" />
     </div>
   </div>
 );

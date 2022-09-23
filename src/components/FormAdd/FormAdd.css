@@ -1,0 +1,39 @@
+:root {
+  --border-radius: 5px;
+  --margin-left: 10px;
+}
+
+.footarea {
+  border-top: 1px solid lightgray;
+  margin-top: 2rem;
+}
+
+.formAdd {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formTitle {
+  width: 40%;
+  border-radius: 5px;
+  padding-left: var(--margin-left);
+}
+
+.formAuthor {
+  width: 20%;
+  border-radius: 5px;
+  padding-left: var(--margin-left);
+}
+
+.formAdd button {
+  width: 15%;
+  padding: 7px 0;
+  font-weight: 700;
+  background-color: #0290ff;
+  color: white;
+  border-radius: 5px;
+}
+
+h2 {
+  color: rgb(85, 84, 84);
+}
