@@ -1,16 +1,23 @@
+:root {
+  --diplay: flex;
+  --justify-content: space-between;
+}
+
 .bookContainer {
   border-radius: 3px;
-  display: flex;
   width: 83vw;
-  justify-content: space-between;
-  height: 14vh;
+  height: 140px;
 }
 
 .BookBody {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 85%;
+}
+
+.bookContainer,
+.BookBody {
+  display: var(--diplay);
+  justify-content: var(--justify-content);
 }
 
 li {
@@ -35,7 +42,6 @@ li {
 
 .infoBook {
   margin-left: 1rem;
-  display: flex;
   flex-direction: column;
   height: 80%;
   align-content: center;
@@ -53,12 +59,17 @@ ul {
 }
 
 .progress {
-  display: flex;
   margin-right: 2rem;
 }
 
+.progress,
+.progtext,
+.buttonContainer,
+.infoBook {
+  display: var(--diplay);
+}
+
 .progText {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 1rem;
@@ -74,7 +85,6 @@ ul {
 }
 
 .buttonContainer {
-  display: flex;
   align-items: center;
   height: 35%;
   margin-top: 10px;
@@ -121,6 +131,7 @@ ul {
 .bookFooter_button {
   background-color: #0290ff;
   color: white;
-  padding: 7px 30px;
+  padding: 7px 15px;
   border-radius: 5px;
+  border: none;
 }
